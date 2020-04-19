@@ -1,1 +1,3 @@
 # wolfram01
+
+Creating 3D graphs from simple edge substitution rules. Documentation and explanation to follow...

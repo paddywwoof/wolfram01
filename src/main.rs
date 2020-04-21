@@ -239,7 +239,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     // shape created 'by hand', first buffer, then buffer passed to shape
     let mut new_buffer = pi3d::buffer::create(&shader, verts, norms, tex_coords,
         nd::Array::from_shape_vec((nfaces, 3usize), faces).unwrap(), false);
-    new_buffer.set_line_width(4.0, false, false);
+    new_buffer.set_line_width(2.0, false, false);
     // put buffer into a new shape
     let mut graph = pi3d::shape::create(vec![new_buffer], camera.reference());
     graph.position(&[0.0, 0.0, 10.0]);

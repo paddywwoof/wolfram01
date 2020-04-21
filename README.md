@@ -1,4 +1,3 @@
-file:///home/patrick/rust/wolfram01/README.md {"mtime":1587337471550,"ctime":1587337209206,"size":112,"etag":"350h06i413j","orphaned":false}
 # wolfram01
 
 **Creating 3D graphs from simple edge substitution rules.**
@@ -47,11 +46,16 @@ being checked are compatible with the 'from' pattern. Both lists are 'flattened'
 to make the process quicker. The function works by making a lookup table to match
 each of the nodes, returning early if there is a conflict.
 
-6. After the number of generations the nodes are spread over block of space then
-'annealed' into a stable form balancing a repulsive force from the centre of gravity
-of all the node (inverse distance) with an attractive force along each edge (proportional
-with distance but with a switch to repulsion when too near.
+6. After the number of generations, the nodes are spread over a block of space then
+'annealed' into a stable form, balancing a repulsive force from the centre of gravity
+of all the nodes (inverse distance) with an attractive force along each edge (proportional
+to distance but with a switch to repulsion when too near.
 
 7. The nodes are then used to form OpenGL vertices with line segments along each
-edge and drawn using rust_pi3d
+edge and drawn using rust_pi3d (which is an adjacent repository to this - see Config.toml
+for the relative folder location to compile.)
 
+MouseOver to see command:
+![alt text](https://github.com/paddywwoof/wolfram01/blob/master/wolfram01a.jpg "release/wolfram01 [[1,2],[1,3]] [[1,2],[1,5],[2,5],[3,5]] [[1,1],[1,1]] 12")
+
+![alt text](https://github.com/paddywwoof/wolfram01/blob/master/wolfram01b.jpg "release/wolfram01 [[1,2,3],[4,2,5]] [[6,3,1],[3,6,4],[1,2,6]] [[1,1,1],[1,1,1]] 600")
